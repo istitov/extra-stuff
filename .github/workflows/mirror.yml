@@ -6,6 +6,7 @@ on:
     branches: ['**']
     tags: ['**']
   delete: # propagate branch/tag deletions
+  workflow_dispatch: # allow manual re-trigger from the Actions UI
 
 # Serialize all mirror runs. The push below rewrites the destination's
 # complete ref-set with `--force --prune`, so two concurrent jobs (even on
